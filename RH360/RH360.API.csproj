@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RH360</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RH360.Data\RH360.Data.csproj" />
+    <ProjectReference Include="..\RH360.Domain\RH360.Domain.csproj" />
+    <ProjectReference Include="..\RH360.InfraStructure\RH360.InfraStructure.csproj" />
+  </ItemGroup>
+
+</Project>
